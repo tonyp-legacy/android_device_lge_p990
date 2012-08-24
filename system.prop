@@ -20,3 +20,6 @@ ro.vold.switchablepair=/mnt/sdcard,/mnt/emmc
 # Add LGE's release identifier. hwmediaplugin checks for this when
 # the network string contains "Vodafone", and crashes if absent
 ro.build.lge.version.release=LGP990-V20l
+
+#hwui blacklist
+hwui.use.blacklist=true

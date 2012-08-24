@@ -71,6 +71,9 @@ on post-fs
     mkdir /data/wmdrm 0770 root root
 
     setprop vold.post_fs_data_done 1
+	
+    #directory to hwui blacklist
+    mkdir /data/local/hwui.deny 0775 system system
 
 on boot
     setprop net.tcp.buffersize.default 4096,87380,196608,4096,16384,110208
