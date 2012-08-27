@@ -48,6 +48,10 @@ on fs
     mount ext3 /dev/block/mmcblk0p6 /lgdrm nosuid nodev noatime
 
 on post-fs
+## hwui blacklist
+    mkdir /data/local/hwui.deny     
+    chown system system /data/local/hwui.deny        
+    chmod 0777 /data/local/hwui.deny  
 ## LGE
     mkdir /data/nv     
     chown system system /data/nv       
@@ -71,9 +75,6 @@ on post-fs
     mkdir /data/wmdrm 0770 root root
 
     setprop vold.post_fs_data_done 1
-	
-    #directory to hwui blacklist
-    mkdir /data/local/hwui.deny 0775 system system
 
 on boot
     setprop net.tcp.buffersize.default 4096,87380,196608,4096,16384,110208
