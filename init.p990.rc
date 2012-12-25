@@ -17,7 +17,7 @@ on post-fs
     chown system system /data/ve
     mount ext3 /dev/block/mmcblk0p10 /data/ve
     chmod 0711 /data/ve
-## LGE
+## LGE 
 
 on boot
 
