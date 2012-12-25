@@ -12,6 +12,11 @@ on post-fs
     mkdir /data/nv
     chown system system /data/nv
     chmod 0711 /data/nv
+
+    mkdir /data/ve
+    chown system system /data/ve
+    mount ext3 /dev/block/mmcblk0p10 /data/ve
+    chmod 0711 /data/ve
 ## LGE
 
 on boot
