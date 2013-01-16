@@ -26,9 +26,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps_brcm_conf.xml:system/etc/gps_brcm_conf.xml
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/wireless.ko:system/lib/modules/wireless.ko
-
-PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/check_sdcard.sh:system/bin/check_sdcard.sh \
     $(LOCAL_PATH)/lgdrm.img:system/bin/lgdrm.img
 
