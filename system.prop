@@ -21,3 +21,6 @@ persist.radio.rr.enable=1
 # goo.im rom identifier
 ro.goo.rom=pa_p990-newbl-tonyp
 
+#bl identifier
+ro.tonyp.bl=newbl
+
