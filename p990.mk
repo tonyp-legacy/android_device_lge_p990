@@ -33,9 +33,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
     $(LOCAL_PATH)/prebuilt/bthid.ko:system/lib/modules/bthid.ko \
     $(LOCAL_PATH)/prebuilt/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
-    $(LOCAL_PATH)/prebuilt/tcp_bic.ko:system/lib/modules/tcp_bic.ko \
-    $(LOCAL_PATH)/prebuilt/tcp_htcp.ko:system/lib/modules/tcp_htcp.ko \
-    $(LOCAL_PATH)/prebuilt/wireless.ko:system/lib/modules/wireless.ko
+    $(LOCAL_PATH)/prebuilt/wireless.ko:system/lib/modules/wireless.ko \
+    $(LOCAL_PATH)/prebuilt/zram.ko:system/lib/modules/zram.ko \
+    $(LOCAL_PATH)/prebuilt/power.tegra.so:system/lib/hw/power.tegra.so 
 
 PRODUCT_PACKAGES += \
     lgcpversion
