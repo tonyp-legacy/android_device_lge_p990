@@ -23,3 +23,6 @@ ro.goo.rom=pa_p990-oldbl-tonyp
 
 #bl identifier
 ro.tonyp.bl=oldbl
+
+#enable purgeable assets
+persist.sys.purgeable_assets=1
