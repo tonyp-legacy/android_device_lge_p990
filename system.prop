@@ -24,3 +24,5 @@ ro.goo.rom=pa_p990-newbl-tonyp
 #bl identifier
 ro.tonyp.bl=newbl
 
+#enable purgeable assets
+persist.sys.purgeable_assets=1
