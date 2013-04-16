@@ -106,14 +106,15 @@ public class LGEInfineon extends RIL implements CommandsInterface {
     static final int RIL_UNSOL_LGE_SIM_STATE_CHANGED = 1060;
     static final int RIL_UNSOL_LGE_SIM_STATE_CHANGED_NEW = 1061;
 
+    static final String basebandVersion = SystemProperties.get("gsm.version.baseband");
+    static final String[] basebandSplit = basebandVersion == null ? new String[1] : basebandVersion.split("-");
+
     @Override
     protected void
     processUnsolicited (Parcel p) {
         Object ret;
         int dataPosition = p.dataPosition(); // save off position within the Parcel
         int response = p.readInt();
-        String basebandVersion = SystemProperties.get("gsm.version.baseband");
-        String[] basebandSplit = basebandVersion == null ? new String[1] : basebandVersion.split("-");
 
         switch(response) {
             case RIL_UNSOL_ON_USSD: ret =  responseStrings(p); break;
@@ -155,7 +156,7 @@ public class LGEInfineon extends RIL implements CommandsInterface {
                 break;
             case 1080: // RIL_UNSOL_LGE_FACTORY_READY (NG)
                 /* Adjust request IDs */
-            	if ("LGSU660AT".equalsIgnoreCase(basebandSplit[0]) == false) {
+            	if ("LGP990AT".equalsIgnoreCase(basebandSplit[0])) {
             		RIL_REQUEST_HANG_UP_CALL = 206;
             	}
                 break;
