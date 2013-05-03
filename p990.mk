@@ -19,9 +19,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.vsnet-down:system/bin/init.vsnet-down \
     $(LOCAL_PATH)/gps_brcm_conf.xml:system/etc/gps_brcm_conf.xml
 
-# Build kernel module instead of copying
-#PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/prebuilt/wireless.ko:system/lib/modules/wireless.ko
+LOCAL_KERNEL := device/lge/p990/kernel/zImage
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel \
+    $(LOCAL_PATH)/kernel/bthid.ko:system/lib/modules/bthid.ko \
+    $(LOCAL_PATH)/kernel/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
+    $(LOCAL_PATH)/kernel/wireless.ko:system/lib/modules/wireless.ko \
+    $(LOCAL_PATH)/kernel/zram.ko:system/lib/modules/zram.ko
 
 PRODUCT_PACKAGES += \
     lgcpversion
