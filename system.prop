@@ -21,5 +21,10 @@ ro.telephony.ril_class=LGEInfineon
 # Enable RIL recovery
 persist.radio.rr.enable=1
 
+#
+# RAM management
+persist.sys.tonyp_mem_mgmt=true
+persist.sys.purgeable_assets=1
+
 # goo.im rom name
 ro.goo.rom=cm-10.1-p990-tonyp-newbl
