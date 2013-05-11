@@ -24,5 +24,6 @@ ro.goo.rom=pa_p990-newbl-tonyp
 #bl identifier
 ro.tonyp.bl=newbl
 
-#enable purgeable assets
+#enable ram management
 persist.sys.purgeable_assets=1
+persist.sys.tonyp_mem_mgmt=true
