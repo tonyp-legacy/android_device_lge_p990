@@ -18,6 +18,8 @@ dalvik.vm.dexopt-flags=m=y,u=n,v=n,o=v
 # Enable RIL recovery
 persist.radio.rr.enable=1
 
+ro.ril.def.agps.mode=1
+
 # goo.im rom identifier
 ro.goo.rom=pa_p990-oldbl-tonyp
 
