@@ -55,3 +55,7 @@
 /dev/timerirq             0660   system     system
 #MOBII_CHNANGE_E 20120213 mg.chang@mobii.co.kr : Appy Sensor Porting
 /dev/tspdrv     0666    root    root
+
+## Bluetooth
+/dev/ttyHS2 0660 bluetooth bluetooth
+/dev/uinput 0660 system bluetooth
