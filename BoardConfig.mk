@@ -32,6 +32,7 @@ TARGET_OTA_ASSERT_DEVICE := p990
 # TWRP flags
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/fsl-tegra-udc/gadget/lun%d/file"
 TARGET_RECOVERY_INITRC := device/lge/p990/init.recovery.rc
+TW_BRIGHTNESS_PATH := /sys/class/backlight/aat2870-backlight/brightness
 DEVICE_RESOLUTION := 480x800
 TW_INTERNAL_STORAGE_PATH := "/sdcard"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "sdcard"
