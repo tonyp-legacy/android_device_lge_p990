@@ -28,5 +28,8 @@ ro.ril.def.agps.mode=1
 persist.sys.tonyp_mem_mgmt=true
 persist.sys.purgeable_assets=1
 
-# goo.im rom name
-ro.goo.rom=cm-10.1-p990-tonyp-newbl
+# debugging
+ro.secure=0
+ro.debuggable=1
+persist.sys.usb.config=mtp,adb
+persist.service.adb.enable=1
