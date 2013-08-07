@@ -10,6 +10,6 @@
 /dev/block/mmcblk0p9    /data               ext4      noatime,nodiratime,nosuid,nodev,journal_async_commit,data=writeback,nodelalloc,errors=panic    wait
 
 #internal sdcard
-/devices/platform/sdhci-tegra.3/mmc_host/mmc0   /storage/sdcard0   auto   default   voldmanaged=sdcard0:11,nonremovable 
+/devices/platform/sdhci-tegra.3/mmc_host/mmc0   /storage/sdcard0   auto   defaults   voldmanaged=sdcard0:11,nonremovable 
 #external sdcard
-/devices/platform/sdhci-tegra.2/mmc_host/mmc1   /storage/sdcard1   auto   default   voldmanaged=sdcard1:auto 
+/devices/platform/sdhci-tegra.2/mmc_host/mmc1   /storage/sdcard1   auto   defaults   voldmanaged=sdcard1:auto 
