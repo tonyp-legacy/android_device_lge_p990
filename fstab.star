@@ -13,3 +13,9 @@
 /devices/platform/sdhci-tegra.3/mmc_host/mmc0   /storage/sdcard0   auto   defaults   voldmanaged=sdcard0:11,nonremovable 
 #external sdcard
 /devices/platform/sdhci-tegra.2/mmc_host/mmc1   /storage/sdcard1   auto   defaults   voldmanaged=sdcard1:auto 
+
+# recovery
+/dev/block/mmcblk0p8    /recovery       emmc     defaults      recoveryonly		
+/dev/block/mmcblk0p6    /boot           emmc     defaults      recoveryonly	
+/dev/block/mmcblk1p1    /external_sd    auto     defaults      recoveryonly			
+/dev/block/mmcblk0p11   /sdcard         auto     defaults      recoveryonly		
