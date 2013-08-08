@@ -30,6 +30,9 @@ ro.ril.def.agps.mode=1
 persist.sys.tonyp_mem_mgmt=true
 persist.sys.purgeable_assets=1
 
+# enable root
+persist.sys.root_access=3
+
 # debugging
 ro.secure=0
 ro.debuggable=1
