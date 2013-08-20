@@ -27,7 +27,6 @@ ro.ril.def.agps.mode=1
 
 #
 # RAM management
-persist.sys.tonyp_mem_mgmt=true
 persist.sys.purgeable_assets=1
 
 # enable root
